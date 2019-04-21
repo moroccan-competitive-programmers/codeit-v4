@@ -34,13 +34,21 @@
 - - **Complexity**:
 
 ### Problem E: Probable Cake
-
 - **Author** : Azuz
 - **Description**:
+  - Given the width and the height of a rectangle and a value A, After performing two horizontal cuts and two vertical cuts at random points inside the rectangle such that the cuts devides it into 9 sub rectangles, what is the probability that one of these sub rectangles is greather than or equals to A.
+
 - **Solution**:
+  - Each vertical and horizontal cut will interect in one point inside the rectangle. You can simply keep moving the first point inside the rectangle and the second point to the right and bottom of the other point, and count the total number of checked points and the total number of valid positions.
+
+  - The answer is the total number of valid positions devided by the total number of checked positions.
+
+  - Note that not restricting the search to the right bottom of the first point might result on A TLE.
+
 - **Complexity**:
 
 ### Problem B: Wrap Up
+
 - **Author** : Azuz
 - **Description**:
   - Given a set of points in the 2D points, you need to remove one point such that the area of the resulting convex poylgon is the minimal Possible.
@@ -86,6 +94,8 @@ You can speed it up a bit using String Hashing (double hashing to avoid anti sim
 To speed it up even more, you could use DSU on Trees to make it O(n * log^2(n)) which is the intended solution.
 
 - **Complexity**:
+
+
   ![](etc/onlogn.png)
 
 ### Problem A: Houda and labyrinth game
@@ -107,20 +117,22 @@ To speed it up even more, you could use DSU on Trees to make it O(n * log^2(n)) 
 
 - **Complexity**:
 
-    ![(oqlognm)](etc/oqlognm.png)
+
+  ![(oqlognm)](etc/oqlognm.png)
 
 ### Problem F: Palindrome Subsequence Strings
 
 - **Author** : Mouad
 - **Description**:
 - **Solution**:
-- It's a simple DP problem, turned out inside the contest that this problem is already explained in this (link)[https://www.geeksforgeeks.org/count-palindromic-subsequence-given-string/]
+- It's a simple DP problem, turned out inside the contest that this problem is already explained in this [link](https://www.geeksforgeeks.org/count-palindromic-subsequence-given-string/)
 
-There are many DP approaches to this problem, but the idea is to get an algorithm of complexity O(n^2) or less.
+There are many DP approaches to this problem, but the idea is to get an algorithm of complexity `O(N^2)` or less.
 
 - **Complexity**:
--
-![](etc/on2.png)
+
+
+  ![](etc/on2.png)
 
 
 
