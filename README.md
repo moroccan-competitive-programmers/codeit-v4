@@ -137,6 +137,9 @@ To speed it up even more, you could use DSU on Trees to make it O(n * log^2(n)) 
 
 There are many DP approaches to this problem, but the idea is to get an algorithm of complexity `O(N^2)` or less.
 
+  ![](etc/problem.png)
+
+
 - **Complexity**:
 
 
