@@ -22,9 +22,9 @@
 ### Problem D: We want to play a game
 - **Author** : Tarik Ed
 - **Description**:
-  - Representation in d is fancy if n%d==3, d is fancier if there are minimum of consecutive zeros after the 3
+  - Representation in d is fancy if `n % d == 3`, `d` is fancier if there are minimum of consecutive zeros after the `3`
 - **Solution**:
-  - For every divisor d>4 of n-3 store the largest power of d in a list, then take the smallest value.
+  - For every divisor `d>4` of `n - 3` store the largest power of d in a list, then take the smallest value.
 - **Complexity**:
 
 ### Problem I: Triangles and stuff
@@ -43,14 +43,26 @@
 ### Problem B: Wrap Up
 - **Author** : Azuz
 - **Description**:
+  - Given a set of points in the 2D points, you need to remove one point such that the area of the resulting convex poylgon is the minimal Possible.
 - **Solution**:
+  - One brute force solution is to compute the convex hull without considiring one point at each time. The complexity of this approach is _O(n² log(n))_. This Solution solution is not the entended solution and might give TLE.
+  - Another way to approach this problem is by noticing that to compute the convex hull in _O(n log(n)_ complexity you need to use graham can algorithm which sort the points based on their polar angle in counterclockwise order around the bottom left point and their distance from this point in case of tie. The second part of the graham scan algorithme runs in O(n). So The idea is to notice that there is no need to resort the points while removing a point different from the bottom left one (say p0), and simply run the second part of graham scan.
+  - Note that you should not forget to consider removing the bottom left point and rerun _O(n log(n))_ convex hull algorithme to compute the area.
 - **Complexity**:
--
+
+  ![](etc/on2.png)
+
 ### Problem H: Houda and kindergarten students
 - **Author** : Mehdi
 - **Description**:
+  - Problem asks simply to compute the sum of happiness value of every subset. the happiness is defined as the diff between the maximum and minimum value of every subset
+
 - **Solution**:
+  - The observation is having all values sorted, then value at i'th position is going to be max for all i subsequences before it and minimum for n - i - 1 subsequences after it . so all we need is sum of a[i]*(2^i * a[i] - 2^(n - i - 1)) over all i.
+  - Since the problem constraints are kind of big, you should do a sort in linear time, counting sort will do the trick here
+
 - **Complexity**:
+  ![](etc/on.png)
 
 ### Problem C: Schoolarship
 
