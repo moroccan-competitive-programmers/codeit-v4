@@ -30,8 +30,11 @@
 ### Problem I: Triangles and stuff
 - **Author** : Mouad
 - **Description**:
+  - Given the coordinates of two points A and Bin the 2D plan. you need to find another 3rd point C such that the triangle ABC is equilateral. Print the point with the minimal x and maximal y in case of time.
 - **Solution**:
-- - **Complexity**:
+- **Complexity**:
+
+  ![](etc/o1.png)
 
 ### Problem E: Probable Cake
 - **Author** : Azuz
@@ -89,6 +92,7 @@
 
 - **Author** : Mouad
 - **Description**:
+  - given a tree, find number of paths having plaindrom strings
 - **Solution**:
     - Store at each node, the number of occurrences of each string from root to he vertices in the subtree of that node.
 And do a DFS to find the answer to the problem. The naive algorithm would result in MLE or TLE O(n^3)
@@ -127,6 +131,7 @@ To speed it up even more, you could use DSU on Trees to make it O(n * log^2(n)) 
 
 - **Author** : Mouad
 - **Description**:
+    - Given a string s, count the number of subsequences that form a palindrom .
 - **Solution**:
 - It's a simple DP problem, turned out inside the contest that this problem is already explained in this [link](https://www.geeksforgeeks.org/count-palindromic-subsequence-given-string/)
 
