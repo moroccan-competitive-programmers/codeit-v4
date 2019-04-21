@@ -31,7 +31,13 @@
 
 - **Author** : Azuz
 - **Description**:
+  - Given the width and the height of a rectangle and a value A, After performing two horizontal cuts and two vertical cuts at random points inside the rectangle such that the cuts devides it into 9 sub rectangles, what is the probability that one of these sub rectangles is greather than or equals to A.
 - **Solution**:
+   - Each vertical and horizontal cut will interect in one point inside the rectangle. You can simply keep moving the first point inside the rectangle and the second point to the right and bottom of the other point, and count the total number of checked points and the total number of valid positions.
+
+   - The answer is the total number of valid positions devided by the total number of checked positions.
+
+  -  Note that not restricting the search to the right bottom of the first point might result on A TLE.
 - **Complexity**:
 
 ### Problem B: Wrap Up
