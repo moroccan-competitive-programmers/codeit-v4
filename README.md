@@ -43,11 +43,18 @@
   ![](etc/on4.png)
 
 ### Problem B: Wrap Up
+
 - **Author** : Azuz
 - **Description**:
+  - Given a set of points in the 2D points, you need to remove one point such that the area of the resulting convex poylgon is the minimal Possible.
 - **Solution**:
+  - One brute force solution is to compute the convex hull without considiring one point at each time. The complexity of this approach is _O(n² log(n))_. This Solution solution is not the entended solution and might give TLE.
+  - Another way to approach this problem is by noticing that to compute the convex hull in _O(n log(n)_ complexity you need to use graham can algorithm which sort the points based on their polar angle in counterclockwise order around the bottom left point and their distance from this point in case of tie. The second part of the graham scan algorithme runs in O(n). So The idea is to notice that there is no need to resort the points while removing a point different from the bottom left one (say p0), and simply run the second part of graham scan.
+  - Note that you should not forget to consider removing the bottom left point and rerun _O(n log(n))_ convex hull algorithme to compute the area.
 - **Complexity**:
--
+
+  ![](etc/on2.png)
+
 ### Problem H: Houda and kindergarten students
 
 - **Author** : Mehdi
