@@ -25,7 +25,7 @@
 - **Author** : Mouad
 - **Description**:
 - **Solution**:
-- - **Complexity**:
+- **Complexity**:
 
 ### Problem E: Probable Cake
 
@@ -40,7 +40,8 @@
   -  Note that not restricting the search to the right bottom of the first point might result on A TLE.
 - **Complexity**:
 
-  - ![](etc/on4.png)
+  ![](etc/on4.png)
+
 ### Problem B: Wrap Up
 - **Author** : Azuz
 - **Description**:
