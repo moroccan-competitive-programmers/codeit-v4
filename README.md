@@ -47,6 +47,9 @@
 
 - **Complexity**:
 
+
+  ![](etc/on4.png)
+
 ### Problem B: Wrap Up
 
 - **Author** : Azuz
