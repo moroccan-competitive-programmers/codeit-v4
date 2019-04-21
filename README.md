@@ -50,7 +50,6 @@
   - since the problem constraints are kind of big, you should do a sort in linear time, counting sort will do the trick here
 
 - **Complexity**:
-  ![linear time](etc/on.png)
 
   - ![linear time](etc/on.png)
 
