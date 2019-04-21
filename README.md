@@ -43,8 +43,14 @@
 ### Problem H: Houda and kindergarten students
 - **Author** : Mehdi
 - **Description**:
+    - Problem asks simply to compute the sum of happiness value of every subset. the happiness is defined as the diff between
+    the maximum and minimum value of every subset
 - **Solution**:
+  - the observation is having all values sorted, then value at i'th position is going to be max for all i subsequences before it and minimum for `n - i - 1`  subsequences after it . so all we need is sum of `a[i]*(2^i * a[i] - 2^(n - i - 1))` over all i.
+  - since the problem constraints are kind of big, you should do a sort in linear time, counting sort will do the trick here
+
 - **Complexity**:
+  ![linear time](etc/on.png)
 
 ### Problem C: Schoolarship
 
