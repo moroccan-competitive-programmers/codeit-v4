@@ -56,6 +56,12 @@ public class Main {
           ds.merge(getIndex(n - 1, i), bottom);
         }
       }
+      
+      for(int i = 0; i < n; ++i) {
+        for(int j = 0; j < m; ++j) {
+          if(grid[i][j] == '1') link(i, j);
+        }
+      }
 
       int q = in.nextInt();
       while (q-- > 0) {
